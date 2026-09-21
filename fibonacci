@@ -1,7 +1,8 @@
 #include <stdio.h>
 
 void fibonacci(int n) {
-    int n1 = 0, n2 = 1, soma, i = 1;
+    long long int n1 = 0, n2 = 1, soma;
+	int i = 1;
     
     printf("0 "); // Imprime o primeiro termo com um espaço
     
@@ -9,7 +10,7 @@ void fibonacci(int n) {
         soma = n1 + n2;
         n1 = n2;
         n2 = soma;
-        printf("%d ", soma); // Imprime os próximos termos com espaço
+        printf("%lld ", soma); // Imprime os próximos termos com espaço
         i++;
     }
     printf("\n"); // Pula uma linha ao final da sequência
